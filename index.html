@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>电子行业研究：从芯片到 AI 服务器</title>
+<title>Electronics Research Review</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 
 </head>
 <body>
-<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="电子行业研究：从芯片到 AI 服务器" data-srcdoc="&lt;!doctype html&gt;
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Electronics Research Review" data-srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;电子行业研究：从芯片到 AI 服务器&lt;/title&gt;
+&lt;title&gt;Electronics Research Review&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(
@@ -2180,6 +2180,331 @@ html&gt;body{padding:0}&lt;/style&gt;
       color: var(--muted-foreground);
     }
 
+    #ecr-review-20261109 .ecr-research-tabs {
+      display: flex;
+      align-items: stretch;
+      gap: 2px;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--border);
+      scrollbar-width: thin;
+    }
+
+    #ecr-review-20261109 .ecr-research-tab {
+      appearance: none;
+      flex: 1 1 150px;
+      min-width: 136px;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--muted-foreground);
+      padding: 10px 12px 9px;
+      font: inherit;
+      white-space: nowrap;
+      text-align: center;
+      cursor: pointer;
+      transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    #ecr-review-20261109 .ecr-research-tab:hover {
+      color: var(--foreground);
+      background: color-mix(in srgb, var(--muted) 70%, transparent);
+    }
+
+    #ecr-review-20261109 .ecr-research-tab[aria-selected=&quot;true&quot;] {
+      color: var(--foreground);
+      border-bottom-color: var(--foreground);
+      background: color-mix(in srgb, var(--muted) 55%, transparent);
+    }
+
+    #ecr-review-20261109 .ecr-research-tab:focus-visible {
+      outline: 2px solid var(--foreground);
+      outline-offset: -3px;
+    }
+
+    #ecr-review-20261109 .ecr-research-card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: color-mix(in srgb, var(--card) 88%, transparent);
+      min-width: 0;
+    }
+
+    #ecr-review-20261109 .ecr-research-overview {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(250px, 0.72fr);
+      gap: 18px 28px;
+      align-items: stretch;
+    }
+
+    #ecr-review-20261109 .ecr-research-thesis {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    #ecr-review-20261109 .ecr-research-kicker {
+      color: var(--muted-foreground);
+    }
+
+    #ecr-review-20261109 .ecr-research-title {
+      font-size: clamp(1.25rem, 2.7vw, 2rem);
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+
+    #ecr-review-20261109 .ecr-research-summary {
+      color: var(--muted-foreground);
+      max-width: 86ch;
+    }
+
+    #ecr-review-20261109 .ecr-research-decision {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--muted) 62%, transparent);
+    }
+
+    #ecr-review-20261109 .ecr-research-decision-label {
+      color: var(--muted-foreground);
+    }
+
+    #ecr-review-20261109 .ecr-research-verdict {
+      line-height: 1.45;
+    }
+
+    #ecr-review-20261109 .ecr-research-next {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-top: auto;
+      padding-top: 9px;
+      border-top: 1px solid var(--border);
+    }
+
+    #ecr-review-20261109 .ecr-research-status-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      padding: 12px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    #ecr-review-20261109 .ecr-research-status {
+      display: grid;
+      grid-template-columns: 9px minmax(0, 1fr);
+      gap: 8px;
+      min-width: 0;
+    }
+
+    #ecr-review-20261109 .ecr-research-status .ecr-dot {
+      margin-top: 0.42em;
+    }
+
+    #ecr-review-20261109 .ecr-research-status-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    #ecr-review-20261109 .ecr-research-chain {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    #ecr-review-20261109 .ecr-research-step {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
+      padding: 9px 8px 0;
+      border-top: 2px solid var(--viz-series-1);
+    }
+
+    #ecr-review-20261109 .ecr-research-step-index {
+      color: var(--muted-foreground);
+    }
+
+    #ecr-review-20261109 .ecr-research-step:nth-child(2) { border-top-color: var(--viz-series-2); }
+    #ecr-review-20261109 .ecr-research-step:nth-child(3) { border-top-color: var(--viz-series-3); }
+    #ecr-review-20261109 .ecr-research-step:nth-child(4) { border-top-color: var(--viz-series-4); }
+    #ecr-review-20261109 .ecr-research-step:nth-child(5) { border-top-color: var(--viz-series-5); }
+
+    #ecr-review-20261109 .ecr-research-step-copy {
+      color: var(--muted-foreground);
+    }
+
+    #ecr-review-20261109 .ecr-research-subhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 8px 18px;
+      flex-wrap: wrap;
+    }
+
+    #ecr-review-20261109 .ecr-research-subhead &gt; div {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    #ecr-review-20261109 .ecr-research-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+    }
+
+    #ecr-review-20261109 .ecr-research-table {
+      width: 100%;
+      min-width: 780px;
+      border-collapse: collapse;
+      font-size: 0.91rem;
+      line-height: 1.45;
+    }
+
+    #ecr-review-20261109 .ecr-research-table th,
+    #ecr-review-20261109 .ecr-research-table td {
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    #ecr-review-20261109 .ecr-research-table th {
+      color: var(--muted-foreground);
+      background: color-mix(in srgb, var(--muted) 55%, transparent);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    #ecr-review-20261109 .ecr-research-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    #ecr-review-20261109 .ecr-research-table td:first-child {
+      min-width: 118px;
+    }
+
+    #ecr-review-20261109 .ecr-research-table td:nth-child(2) {
+      min-width: 170px;
+    }
+
+    #ecr-review-20261109 .ecr-research-metric-name {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-weight: 500;
+    }
+
+    #ecr-review-20261109 .ecr-research-source {
+      display: inline-block;
+      width: fit-content;
+    }
+
+    #ecr-review-20261109 .ecr-reading {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--foreground);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    #ecr-review-20261109 .ecr-reading::before {
+      content: &quot;&quot;;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--ecr-reading-color, var(--muted-foreground));
+    }
+
+    #ecr-review-20261109 .ecr-reading.is-up { --ecr-reading-color: var(--red); }
+    #ecr-review-20261109 .ecr-reading.is-tight { --ecr-reading-color: var(--orange); }
+    #ecr-review-20261109 .ecr-reading.is-neutral { --ecr-reading-color: var(--blue); }
+    #ecr-review-20261109 .ecr-reading.is-down { --ecr-reading-color: var(--green); }
+
+    #ecr-review-20261109 .ecr-data-type {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 1px 7px;
+      color: var(--muted-foreground);
+      white-space: nowrap;
+    }
+
+    #ecr-review-20261109 .ecr-research-bottom {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr);
+      gap: 18px 28px;
+    }
+
+    #ecr-review-20261109 .ecr-research-companies,
+    #ecr-review-20261109 .ecr-research-evidence {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    #ecr-review-20261109 .ecr-research-company {
+      display: grid;
+      grid-template-columns: minmax(122px, 0.6fr) minmax(0, 1.4fr);
+      gap: 4px 14px;
+      padding: 9px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    #ecr-review-20261109 .ecr-research-company:first-of-type {
+      border-top: 0;
+    }
+
+    #ecr-review-20261109 .ecr-research-company-id {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    #ecr-review-20261109 .ecr-research-company-read {
+      color: var(--muted-foreground);
+    }
+
+    #ecr-review-20261109 .ecr-research-company-link {
+      width: fit-content;
+    }
+
+    #ecr-review-20261109 .ecr-research-evidence {
+      padding: 13px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: color-mix(in srgb, var(--muted) 45%, transparent);
+    }
+
+    #ecr-review-20261109 .ecr-research-evidence p {
+      color: var(--muted-foreground);
+    }
+
+    #ecr-review-20261109 .ecr-research-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: auto;
+    }
+
+    #ecr-review-20261109 .ecr-research-links a {
+      width: fit-content;
+    }
+
     #ecr-review-20261109 .ecr-drill-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -2406,6 +2731,19 @@ html&gt;body{padding:0}&lt;/style&gt;
         grid-row: 2;
       }
 
+      #ecr-review-20261109 .ecr-research-overview,
+      #ecr-review-20261109 .ecr-research-bottom {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      #ecr-review-20261109 .ecr-research-status-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #ecr-review-20261109 .ecr-research-chain {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
       #ecr-review-20261109 .ecr-calc-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -2435,6 +2773,22 @@ html&gt;body{padding:0}&lt;/style&gt;
         grid-template-columns: minmax(0, 1fr);
       }
 
+      #ecr-review-20261109 .ecr-research-card {
+        padding: 14px;
+      }
+
+      #ecr-review-20261109 .ecr-research-chain {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #ecr-review-20261109 .ecr-research-company {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      #ecr-review-20261109 .ecr-research-table {
+        min-width: 700px;
+      }
+
       #ecr-review-20261109 .ecr-chart-toolbar,
       #ecr-review-20261109 .ecr-section-head {
         align-items: start;
@@ -2456,7 +2810,8 @@ html&gt;body{padding:0}&lt;/style&gt;
     }
 
     @media (pointer: coarse) {
-      #ecr-review-20261109 .ecr-series-toggle {
+      #ecr-review-20261109 .ecr-series-toggle,
+      #ecr-review-20261109 .ecr-research-tab {
         min-height: 44px;
       }
 
@@ -2610,6 +2965,25 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;span class=&quot;ecr-caption text-small&quot;&gt;收入、毛利、库存、现金流&lt;/span&gt;
       &lt;/div&gt;
     &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section id=&quot;ecr-research-section&quot; class=&quot;ecr-section&quot; aria-labelledby=&quot;ecr-research-title&quot;&gt;
+    &lt;div class=&quot;ecr-section-head&quot;&gt;
+      &lt;div&gt;
+        &lt;h2 id=&quot;ecr-research-title&quot;&gt;四条重点链路：用同一套模版做研究&lt;/h2&gt;
+        &lt;p class=&quot;ecr-caption text-small&quot;&gt;每条链路都回答同一组问题：景气从哪里来、卡在哪里、如何传导、哪些数据能验证，以及是否已经进入报表。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;span class=&quot;ecr-caption text-small&quot;&gt;公开数据截至 2026-11-09&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;ecr-research-tabs&quot; id=&quot;ecr-research-tabs&quot; role=&quot;tablist&quot; aria-label=&quot;电子行业重点研究链路&quot;&gt;
+      &lt;button class=&quot;ecr-research-tab&quot; id=&quot;ecr-research-tab-memory&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;ecr-research-panel&quot; aria-selected=&quot;true&quot; tabindex=&quot;0&quot;&gt;01 存储芯片&lt;/button&gt;
+      &lt;button class=&quot;ecr-research-tab&quot; id=&quot;ecr-research-tab-foundry&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;ecr-research-panel&quot; aria-selected=&quot;false&quot; tabindex=&quot;-1&quot;&gt;02 晶圆制造&lt;/button&gt;
+      &lt;button class=&quot;ecr-research-tab&quot; id=&quot;ecr-research-tab-packaging&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;ecr-research-panel&quot; aria-selected=&quot;false&quot; tabindex=&quot;-1&quot;&gt;03 先进封装&lt;/button&gt;
+      &lt;button class=&quot;ecr-research-tab&quot; id=&quot;ecr-research-tab-module&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;ecr-research-panel&quot; aria-selected=&quot;false&quot; tabindex=&quot;-1&quot;&gt;04 模组与光子&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div id=&quot;ecr-research-panel&quot; class=&quot;ecr-research-card&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;ecr-research-tab-memory&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
   &lt;/section&gt;
 
   &lt;section class=&quot;ecr-section&quot; aria-labelledby=&quot;ecr-calc-title&quot;&gt;
@@ -4564,6 +4938,478 @@ const ECR_DATA = {
       &quot;source&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225639532.PDF&quot;
     }
   ],
+  &quot;researchChains&quot;: [
+    {
+      &quot;id&quot;: &quot;memory&quot;,
+      &quot;name&quot;: &quot;存储芯片&quot;,
+      &quot;kicker&quot;: &quot;01 · 存储芯片 / DRAM · HBM · NAND&quot;,
+      &quot;title&quot;: &quot;HBM 重新分配了存储供给，涨价先在原厂利润表兑现&quot;,
+      &quot;summary&quot;: &quot;AI 服务器同时拉动 HBM、DDR5 与高性能 SSD。判断周期不能只看一个现货价，而要把合约价、现货价、库存、bit shipments 和资本开支放在同一条时间线上；价格改善通常先进入收入与毛利率，再传导到现金流和下一轮扩产。&quot;,
+      &quot;verdict&quot;: &quot;产业状态偏强，研究重点正从“价格是否上涨”切换到“利润和现金流能否持续兑现”。&quot;,
+      &quot;nextCheck&quot;: &quot;下一轮 DRAM 合约报价是否继续上行；HBM 供给协议、客户预付款和原厂库存是否同步改善；资本开支是否开始造成下一轮供给压力。&quot;,
+      &quot;statuses&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;value&quot;: &quot;AI 与容量升级加速&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;价格&quot;, &quot;value&quot;: &quot;DDR5、NAND 上行&quot;, &quot;tone&quot;: &quot;red&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;value&quot;: &quot;HBM 挤压，偏紧&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;报表&quot;, &quot;value&quot;: &quot;利润已兑现&quot;, &quot;tone&quot;: &quot;green&quot; }
+      ],
+      &quot;steps&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;copy&quot;: &quot;AI 服务器、手机容量和换机周期决定 bit 需求。&quot; },
+        { &quot;label&quot;: &quot;量价&quot;, &quot;copy&quot;: &quot;合约价领先利润，现货价反映短期缺口与渠道情绪。&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;copy&quot;: &quot;晶圆产能向 HBM 与先进制程倾斜，挤压通用 DRAM。&quot; },
+        { &quot;label&quot;: &quot;价值&quot;, &quot;copy&quot;: &quot;HBM 堆栈、DDR5 模组和企业级 SSD 提升单机价值量。&quot; },
+        { &quot;label&quot;: &quot;兑现&quot;, &quot;copy&quot;: &quot;收入、毛利率、库存和经营现金流验证景气质量。&quot; }
+      ],
+      &quot;metrics&quot;: [
+        {
+          &quot;metric&quot;: &quot;DRAM 合约价&quot;,
+          &quot;reading&quot;: &quot;DDR5 是主价格锚；DDR4 因供给收缩出现补涨，规格与期限必须对齐。&quot;,
+          &quot;signal&quot;: &quot;季度利润与供需方向&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;月度 / 合约周期&quot;,
+          &quot;type&quot;: &quot;公开价格&quot;,
+          &quot;source&quot;: &quot;TrendForce DRAM 合约&quot;,
+          &quot;url&quot;: &quot;https://www.trendforce.com/price/dram/dram_contract&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;DDR4 / DDR5 现货&quot;,
+          &quot;reading&quot;: &quot;现货更敏感，但受规格、品牌、渠道和单日样本影响，不能直接替代合约价。&quot;,
+          &quot;signal&quot;: &quot;短期缺口与渠道情绪&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;高频&quot;,
+          &quot;type&quot;: &quot;公开价格&quot;,
+          &quot;source&quot;: &quot;TrendForce DRAM 现货&quot;,
+          &quot;url&quot;: &quot;https://www.trendforce.com/price/dram/dram_spot&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;NAND 现货&quot;,
+          &quot;reading&quot;: &quot;512Gb、256Gb、128Gb TLC 需分规格观察；容量颗粒与 SSD 价格不能混用。&quot;,
+          &quot;signal&quot;: &quot;存储涨价是否向 SSD 扩散&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;高频&quot;,
+          &quot;type&quot;: &quot;公开价格&quot;,
+          &quot;source&quot;: &quot;TrendForce NAND 现货&quot;,
+          &quot;url&quot;: &quot;https://www.trendforce.com/price/flash/flash_spot&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;HBM 供需与交期&quot;,
+          &quot;reading&quot;: &quot;关注客户认证、长期协议、预付款和扩产爬坡；公开市场没有统一连续报价。&quot;,
+          &quot;signal&quot;: &quot;高端供给约束与订单可见度&quot;,
+          &quot;tone&quot;: &quot;tight&quot;,
+          &quot;frequency&quot;: &quot;季度 / 事件&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;Micron 10-K&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;原厂与渠道库存&quot;,
+          &quot;reading&quot;: &quot;库存周数下降支撑涨价；若价格上行的同时库存重新累积，周期质量会变差。&quot;,
+          &quot;signal&quot;: &quot;涨价能否延续&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;Micron 10-K&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;Bit shipments 与 Capex&quot;,
+          &quot;reading&quot;: &quot;量、价、资本开支必须同看；只有价格而没有出货增长，收入弹性会受限。&quot;,
+          &quot;signal&quot;: &quot;周期持续性与下一轮供给&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;Micron 10-K&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm&quot;
+        }
+      ],
+      &quot;companies&quot;: [
+        {
+          &quot;name&quot;: &quot;Micron&quot;,
+          &quot;ticker&quot;: &quot;MU&quot;,
+          &quot;period&quot;: &quot;FY2026&quot;,
+          &quot;evidence&quot;: &quot;收入 1,331.88 亿美元；毛利率约 80.7%；经营现金流 896.75 亿美元。&quot;,
+          &quot;read&quot;: &quot;收入、毛利与现金流同步改善，是存储涨价已经进入报表的直接证据。&quot;,
+          &quot;source&quot;: &quot;https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm&quot;
+        },
+        {
+          &quot;name&quot;: &quot;SK hynix&quot;,
+          &quot;ticker&quot;: &quot;000660.KS&quot;,
+          &quot;period&quot;: &quot;季度跟踪&quot;,
+          &quot;evidence&quot;: &quot;重点观察 HBM 收入结构、客户协议、库存和资本开支，而不是只看通用 DRAM 报价。&quot;,
+          &quot;read&quot;: &quot;HBM 业务结构决定利润弹性，也决定通用 DRAM 可分配产能。&quot;,
+          &quot;source&quot;: &quot;https://investors.skhynix.com/&quot;
+        },
+        {
+          &quot;name&quot;: &quot;Samsung Electronics&quot;,
+          &quot;ticker&quot;: &quot;005930.KS&quot;,
+          &quot;period&quot;: &quot;季度跟踪&quot;,
+          &quot;evidence&quot;: &quot;重点观察 HBM 客户认证、量产爬坡、存储库存和代工投入之间的资源分配。&quot;,
+          &quot;read&quot;: &quot;认证与良率进展会影响 HBM 竞争格局和供给释放速度。&quot;,
+          &quot;source&quot;: &quot;https://www.samsung.com/global/ir/&quot;
+        }
+      ],
+      &quot;caveat&quot;: &quot;合约价、现货价与公司财报的统计频率和报告期不同。HBM 交期、客户协议和渠道库存部分来自公司披露或研究口径，不能与每日现货报价直接拼接。&quot;,
+      &quot;sources&quot;: [
+        { &quot;label&quot;: &quot;TrendForce DRAM 合约&quot;, &quot;url&quot;: &quot;https://www.trendforce.com/price/dram/dram_contract&quot; },
+        { &quot;label&quot;: &quot;TrendForce DRAM 现货&quot;, &quot;url&quot;: &quot;https://www.trendforce.com/price/dram/dram_spot&quot; },
+        { &quot;label&quot;: &quot;TrendForce NAND 现货&quot;, &quot;url&quot;: &quot;https://www.trendforce.com/price/flash/flash_spot&quot; }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;foundry&quot;,
+      &quot;name&quot;: &quot;晶圆制造&quot;,
+      &quot;kicker&quot;: &quot;02 · 晶圆制造 / 7nm · 5nm · 3nm&quot;,
+      &quot;title&quot;: &quot;先进节点不只卖晶圆，更在出售产能确定性和良率&quot;,
+      &quot;summary&quot;: &quot;代工研究要同时回答三个问题：晶圆厂是否满载、产品组合是否向高价值节点迁移、扩产是否会把供给重新推回过剩。利用率解释当期交付，ASP 与节点收入占比解释利润，资本开支则决定下一轮周期。&quot;,
+      &quot;verdict&quot;: &quot;先进制程维持强势，成熟制程分化；需要用利用率、ASP 和资本开支判断景气能否跨季度延续。&quot;,
+      &quot;nextCheck&quot;: &quot;先进节点收入占比与晶圆 ASP 能否继续提升；利用率高位是否伴随价格改善；资本开支和预付款是否领先于新一轮供给释放。&quot;,
+      &quot;statuses&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;value&quot;: &quot;AI 与先进节点偏强&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;价格&quot;, &quot;value&quot;: &quot;结构升级驱动 ASP&quot;, &quot;tone&quot;: &quot;red&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;value&quot;: &quot;先进节点偏紧&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;报表&quot;, &quot;value&quot;: &quot;收入与毛利兑现&quot;, &quot;tone&quot;: &quot;green&quot; }
+      ],
+      &quot;steps&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;copy&quot;: &quot;AI 芯片、手机旗舰和信息基础设施拉动先进节点。&quot; },
+        { &quot;label&quot;: &quot;量价&quot;, &quot;copy&quot;: &quot;晶圆出货、12 英寸等效产能与 ASP 共同解释收入。&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;copy&quot;: &quot;利用率、良率、交期与扩产节奏决定短期瓶颈。&quot; },
+        { &quot;label&quot;: &quot;价值&quot;, &quot;copy&quot;: &quot;7nm、5nm、3nm 收入占比提升改变产品组合。&quot; },
+        { &quot;label&quot;: &quot;兑现&quot;, &quot;copy&quot;: &quot;毛利率、预付款、资本开支与现金流验证议价能力。&quot; }
+      ],
+      &quot;metrics&quot;: [
+        {
+          &quot;metric&quot;: &quot;产能利用率&quot;,
+          &quot;reading&quot;: &quot;高位利用率只有在价格或高价值产品占比提升时，才会形成利润弹性。&quot;,
+          &quot;signal&quot;: &quot;供给紧张与固定成本吸收&quot;,
+          &quot;tone&quot;: &quot;tight&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;SMIC 2026 Q2&quot;,
+          &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-08-14/1225471507.PDF&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;晶圆出货量 / 12 英寸等效产能&quot;,
+          &quot;reading&quot;: &quot;把出货增长与产能扩张分开看，才能识别需求驱动还是供给驱动。&quot;,
+          &quot;signal&quot;: &quot;真实出货与扩产节奏&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;晶圆 ASP&quot;,
+          &quot;reading&quot;: &quot;ASP 受制程、客户、地区与产品组合影响；应看趋势和结构，不应机械横比不同代工厂。&quot;,
+          &quot;signal&quot;: &quot;产品组合与定价权&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露 / 估算&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;7nm / 5nm / 3nm 收入占比&quot;,
+          &quot;reading&quot;: &quot;先进节点占比提升通常改善毛利，但也提高资本开支和良率管理难度。&quot;,
+          &quot;signal&quot;: &quot;价值量向先进节点迁移&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;资本开支&quot;,
+          &quot;reading&quot;: &quot;扩产首先支撑交付，随后可能增加折旧并改变供需；要结合设备到厂与量产时间。&quot;,
+          &quot;signal&quot;: &quot;下一轮供给与折旧压力&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;季度 / 年度指引&quot;,
+          &quot;type&quot;: &quot;公司指引&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;交期、良率、预付款与订单&quot;,
+          &quot;reading&quot;: &quot;这些指标往往先于收入变化，但公开口径不连续；优先级高于单次媒体报道。&quot;,
+          &quot;signal&quot;: &quot;未来 1–3 个季度可见度&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;事件 / 季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        }
+      ],
+      &quot;companies&quot;: [
+        {
+          &quot;name&quot;: &quot;TSMC&quot;,
+          &quot;ticker&quot;: &quot;TSM&quot;,
+          &quot;period&quot;: &quot;2026 Q3&quot;,
+          &quot;evidence&quot;: &quot;收入 467.20 亿美元，同比 +41.2%；毛利率 66.4%。&quot;,
+          &quot;read&quot;: &quot;先进制程与先进封装共同支撑收入、毛利和定价能力。&quot;,
+          &quot;source&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;name&quot;: &quot;中芯国际&quot;,
+          &quot;ticker&quot;: &quot;688981&quot;,
+          &quot;period&quot;: &quot;2026 Q2&quot;,
+          &quot;evidence&quot;: &quot;收入 30.06 亿美元；毛利率 25.3%；产能利用率 93.7%。&quot;,
+          &quot;read&quot;: &quot;利用率改善验证成熟制程需求，但毛利率仍取决于价格和产品结构。&quot;,
+          &quot;source&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-08-14/1225471507.PDF&quot;
+        },
+        {
+          &quot;name&quot;: &quot;联电 UMC&quot;,
+          &quot;ticker&quot;: &quot;2303.TW&quot;,
+          &quot;period&quot;: &quot;季度跟踪&quot;,
+          &quot;evidence&quot;: &quot;重点观察成熟制程利用率、ASP、产品组合和资本开支纪律。&quot;,
+          &quot;read&quot;: &quot;成熟制程更适合验证消费电子、汽车和工业需求的真实强弱。&quot;,
+          &quot;source&quot;: &quot;https://www.umc.com/en/IR/&quot;
+        }
+      ],
+      &quot;caveat&quot;: &quot;晶圆 ASP 常由收入除以出货量估算，不同公司产能口径、制程分类和汇率并不一致。利用率也不能单独代表盈利能力，应与价格、产品结构与折旧一起判断。&quot;,
+      &quot;sources&quot;: [
+        { &quot;label&quot;: &quot;TSMC 2026 Q3&quot;, &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot; },
+        { &quot;label&quot;: &quot;SMIC 2026 Q2&quot;, &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-08-14/1225471507.PDF&quot; }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;packaging&quot;,
+      &quot;name&quot;: &quot;先进封装&quot;,
+      &quot;kicker&quot;: &quot;03 · 先进封装 / CoWoS · 2.5D · 3D&quot;,
+      &quot;title&quot;: &quot;先进封装把晶圆、HBM 和系统交付连接成同一个瓶颈&quot;,
+      &quot;summary&quot;: &quot;AI 加速器的交付不只取决于晶圆，还取决于 CoWoS 月产能、HBM 堆叠、基板、良率与测试。扩产公告不等于可用产能，设备到厂也不等于客户认证通过；研究要沿着“公告—认证—爬坡—收入”逐层验证。&quot;,
+      &quot;verdict&quot;: &quot;供给仍是最重要的观察点，但公开数据以公司披露和节点事件为主，不能伪装成连续报价。&quot;,
+      &quot;nextCheck&quot;: &quot;CoWoS 扩产是否按期爬坡；先进封装收入占比是否跟随提升；客户认证、良率和设备交期是否出现改善或新的卡点。&quot;,
+      &quot;statuses&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;value&quot;: &quot;AI 加速器驱动&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;价格&quot;, &quot;value&quot;: &quot;规格升级提 ASP&quot;, &quot;tone&quot;: &quot;red&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;value&quot;: &quot;CoWoS 仍是焦点&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;报表&quot;, &quot;value&quot;: &quot;先进封装占比提升&quot;, &quot;tone&quot;: &quot;green&quot; }
+      ],
+      &quot;steps&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;copy&quot;: &quot;GPU/ASIC 与 HBM 的集成需求决定先进封装订单。&quot; },
+        { &quot;label&quot;: &quot;量价&quot;, &quot;copy&quot;: &quot;封装颗数、单颗 ASP 与先进封装收入共同解释增量。&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;copy&quot;: &quot;CoWoS、基板、设备、良率和测试决定实际交付。&quot; },
+        { &quot;label&quot;: &quot;价值&quot;, &quot;copy&quot;: &quot;2.5D/3D 提高互连密度，也提高单颗芯片价值量。&quot; },
+        { &quot;label&quot;: &quot;兑现&quot;, &quot;copy&quot;: &quot;客户认证、量产爬坡、毛利与产能利用率验证兑现。&quot; }
+      ],
+      &quot;metrics&quot;: [
+        {
+          &quot;metric&quot;: &quot;CoWoS 月产能&quot;,
+          &quot;reading&quot;: &quot;优先使用公司公开说明与设备/供应链交叉验证；没有统一连续序列时只记录节点值。&quot;,
+          &quot;signal&quot;: &quot;AI 加速器交付上限&quot;,
+          &quot;tone&quot;: &quot;tight&quot;,
+          &quot;frequency&quot;: &quot;事件 / 季度&quot;,
+          &quot;type&quot;: &quot;公司披露 / 估算&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;先进封装收入与占比&quot;,
+          &quot;reading&quot;: &quot;占比提升说明价值量迁移；收入增速要和资本开支、折旧与产能投放一起看。&quot;,
+          &quot;signal&quot;: &quot;价值量是否进入报表&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;客户认证&quot;,
+          &quot;reading&quot;: &quot;认证通过是订单转收入的前提；公告、送样、量产属于不同阶段，不能提前等同。&quot;,
+          &quot;signal&quot;: &quot;订单可见度&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;事件&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;ASE 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1122411/000095010326016324/dp255760_6k.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;量产爬坡&quot;,
+          &quot;reading&quot;: &quot;关注良率、设备安装、材料供应和客户验证是否同步，不以扩产公告代替量产。&quot;,
+          &quot;signal&quot;: &quot;供给释放速度&quot;,
+          &quot;tone&quot;: &quot;tight&quot;,
+          &quot;frequency&quot;: &quot;事件 / 季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;ASE 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1122411/000095010326016324/dp255760_6k.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;良率&quot;,
+          &quot;reading&quot;: &quot;良率直接决定有效产能、单位成本和客户导入节奏，公开连续数据通常有限。&quot;,
+          &quot;signal&quot;: &quot;真实可用供给&quot;,
+          &quot;tone&quot;: &quot;tight&quot;,
+          &quot;frequency&quot;: &quot;事件 / 研究口径&quot;,
+          &quot;type&quot;: &quot;研究估算&quot;,
+          &quot;source&quot;: &quot;ASE 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1122411/000095010326016324/dp255760_6k.htm&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;单颗封装 ASP 与设备交期&quot;,
+          &quot;reading&quot;: &quot;ASP 应区分封装颗数、结构复杂度与材料；设备交期更适合作为瓶颈代理。&quot;,
+          &quot;signal&quot;: &quot;价值量与扩产节奏&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度 / 事件&quot;,
+          &quot;type&quot;: &quot;公司披露 / 估算&quot;,
+          &quot;source&quot;: &quot;TSMC 2026 Q3&quot;,
+          &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        }
+      ],
+      &quot;companies&quot;: [
+        {
+          &quot;name&quot;: &quot;TSMC&quot;,
+          &quot;ticker&quot;: &quot;TSM&quot;,
+          &quot;period&quot;: &quot;2026 Q3&quot;,
+          &quot;evidence&quot;: &quot;公司披露先进封装与先进制程为重要增量；需继续拆分 CoWoS 可用产能与爬坡进度。&quot;,
+          &quot;read&quot;: &quot;晶圆代工龙头同时掌握先进节点与封装，是验证 AI 芯片交付链条的核心样本。&quot;,
+          &quot;source&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot;
+        },
+        {
+          &quot;name&quot;: &quot;ASE 日月光&quot;,
+          &quot;ticker&quot;: &quot;ASX&quot;,
+          &quot;period&quot;: &quot;2026 Q3&quot;,
+          &quot;evidence&quot;: &quot;收入 2,441.61 亿新台币，同比 +44.8%；毛利率约 22.1%。&quot;,
+          &quot;read&quot;: &quot;封测稼动率与先进封装结构改善已经进入收入与毛利。&quot;,
+          &quot;source&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1122411/000095010326016324/dp255760_6k.htm&quot;
+        },
+        {
+          &quot;name&quot;: &quot;长电科技&quot;,
+          &quot;ticker&quot;: &quot;600584&quot;,
+          &quot;period&quot;: &quot;季度跟踪&quot;,
+          &quot;evidence&quot;: &quot;重点观察先进封装收入占比、客户认证、资本开支和产能利用率。&quot;,
+          &quot;read&quot;: &quot;国内封测样本用于验证海外需求外溢与本土产能爬坡是否同步。&quot;,
+          &quot;source&quot;: &quot;https://www.jcetglobal.com/&quot;
+        }
+      ],
+      &quot;caveat&quot;: &quot;CoWoS 月产能、良率、交期和单颗 ASP 没有完全统一、连续的公开序列。本页的“公司披露”只代表可核实方向；标注“研究估算”的指标不应被当作公司官方数字。&quot;,
+      &quot;sources&quot;: [
+        { &quot;label&quot;: &quot;TSMC 2026 Q3&quot;, &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm&quot; },
+        { &quot;label&quot;: &quot;ASE 2026 Q3&quot;, &quot;url&quot;: &quot;https://www.sec.gov/Archives/edgar/data/1122411/000095010326016324/dp255760_6k.htm&quot; }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;module&quot;,
+      &quot;name&quot;: &quot;模组与光子&quot;,
+      &quot;kicker&quot;: &quot;04 · 模组与光子 / 800G · 1.6T · PCB · CCL&quot;,
+      &quot;title&quot;: &quot;算力链的价值量，沿光模块、PCB、CCL 和系统 BOM 向外扩散&quot;,
+      &quot;summary&quot;: &quot;芯片景气只有穿过模组和系统集成，才会变成更大的收入池。光模块看速率与出货、PCB 看层数和 HDI、CCL 看等级与铜价成本，服务器则看 BOM 与毛利率留存；同一条 AI 需求链，各环节的兑现速度并不相同。&quot;,
+      &quot;verdict&quot;: &quot;光模块与高阶 PCB 已出现较强的报表兑现，系统集成收入弹性更大，但利润率留存仍需单独验证。&quot;,
+      &quot;nextCheck&quot;: &quot;800G 向 1.6T 升级是否带来 ASP 和毛利率共振；高阶 PCB/CCL 扩产是否形成新供给；系统厂收入增长能否转化为毛利与经营现金流。&quot;,
+      &quot;statuses&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;value&quot;: &quot;AI 集群加速扩张&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;价格&quot;, &quot;value&quot;: &quot;速率与层数升级&quot;, &quot;tone&quot;: &quot;red&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;value&quot;: &quot;高端产能偏紧&quot;, &quot;tone&quot;: &quot;orange&quot; },
+        { &quot;label&quot;: &quot;报表&quot;, &quot;value&quot;: &quot;收入高增、利润分化&quot;, &quot;tone&quot;: &quot;green&quot; }
+      ],
+      &quot;steps&quot;: [
+        { &quot;label&quot;: &quot;需求&quot;, &quot;copy&quot;: &quot;集群规模、交换带宽与机柜功率决定连接和材料需求。&quot; },
+        { &quot;label&quot;: &quot;量价&quot;, &quot;copy&quot;: &quot;800G/1.6T、PCB 层数和 CCL 等级共同提升 ASP。&quot; },
+        { &quot;label&quot;: &quot;供给&quot;, &quot;copy&quot;: &quot;高端光芯片、HDI、CCL 与装配良率决定交付上限。&quot; },
+        { &quot;label&quot;: &quot;价值&quot;, &quot;copy&quot;: &quot;光互连、计算板、电源与散热进入更高的单柜 BOM。&quot; },
+        { &quot;label&quot;: &quot;兑现&quot;, &quot;copy&quot;: &quot;收入、毛利率、应收、库存和经营现金流验证质量。&quot; }
+      ],
+      &quot;metrics&quot;: [
+        {
+          &quot;metric&quot;: &quot;光模块速率与出货&quot;,
+          &quot;reading&quot;: &quot;800G 放量与 1.6T 导入要分开观察；速率升级通常提升 ASP，但客户结构影响毛利。&quot;,
+          &quot;signal&quot;: &quot;AI 网络价值量&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度 / 事件&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;中际旭创 2026 三季报&quot;,
+          &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;光模块 ASP 与毛利率&quot;,
+          &quot;reading&quot;: &quot;收入增速高于出货增速才能说明 ASP 上升；毛利率决定涨价有多少留在企业。&quot;,
+          &quot;signal&quot;: &quot;升级是否能转为利润&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;中际旭创 2026 三季报&quot;,
+          &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;PCB 层数与 HDI 结构&quot;,
+          &quot;reading&quot;: &quot;高阶数通板层数增加、孔径与线路密度提升，价值量和工艺门槛同步上升。&quot;,
+          &quot;signal&quot;: &quot;单机 PCB 价值量&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度 / 产品结构&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;沪电股份 2026 三季报&quot;,
+          &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-28/1225627804.PDF&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;CCL 等级&quot;,
+          &quot;reading&quot;: &quot;高速、低损耗等级决定可服务的速率与层数；树脂、玻纤布和铜箔共同影响成本。&quot;,
+          &quot;signal&quot;: &quot;材料升级与供给门槛&quot;,
+          &quot;tone&quot;: &quot;up&quot;,
+          &quot;frequency&quot;: &quot;季度 / 产品结构&quot;,
+          &quot;type&quot;: &quot;公司披露&quot;,
+          &quot;source&quot;: &quot;生益科技&quot;,
+          &quot;url&quot;: &quot;https://www.sigc.com/&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;铜价成本代理&quot;,
+          &quot;reading&quot;: &quot;铜价影响 PCB、互连与电源成本，但电子级材料成交价还包含加工费和规格溢价。&quot;,
+          &quot;signal&quot;: &quot;原材料成本压力&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;高频&quot;,
+          &quot;type&quot;: &quot;公开价格&quot;,
+          &quot;source&quot;: &quot;Yahoo Finance 铜期货&quot;,
+          &quot;url&quot;: &quot;https://finance.yahoo.com/quote/HG=F/&quot;
+        },
+        {
+          &quot;metric&quot;: &quot;系统 BOM、ASP 与交付&quot;,
+          &quot;reading&quot;: &quot;单柜 BOM 是研究模型，不是厂商报价；需要同时看 ASP、毛利率和现金转化。&quot;,
+          &quot;signal&quot;: &quot;整机价值量与议价能力&quot;,
+          &quot;tone&quot;: &quot;neutral&quot;,
+          &quot;frequency&quot;: &quot;季度 / 研究假设&quot;,
+          &quot;type&quot;: &quot;研究估算&quot;,
+          &quot;source&quot;: &quot;工业富联 2026 三季报&quot;,
+          &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225639532.PDF&quot;
+        }
+      ],
+      &quot;companies&quot;: [
+        {
+          &quot;name&quot;: &quot;中际旭创&quot;,
+          &quot;ticker&quot;: &quot;300308&quot;,
+          &quot;period&quot;: &quot;2026 前三季度&quot;,
+          &quot;evidence&quot;: &quot;收入 695.47 亿元，同比 +178.13%；净利润 222.38 亿元；经营现金流 80.08 亿元。&quot;,
+          &quot;read&quot;: &quot;速率升级与 AI 需求已经同时进入收入、利润和现金流。&quot;,
+          &quot;source&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF&quot;
+        },
+        {
+          &quot;name&quot;: &quot;沪电股份&quot;,
+          &quot;ticker&quot;: &quot;002463&quot;,
+          &quot;period&quot;: &quot;2026 前三季度&quot;,
+          &quot;evidence&quot;: &quot;收入 232.25 亿元，同比 +71.88%；净利润 56.22 亿元；经营现金流 27.04 亿元。&quot;,
+          &quot;read&quot;: &quot;高阶数通板量价齐升，利润增速高于收入，验证产品结构升级。&quot;,
+          &quot;source&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-28/1225627804.PDF&quot;
+        },
+        {
+          &quot;name&quot;: &quot;生益科技&quot;,
+          &quot;ticker&quot;: &quot;600183&quot;,
+          &quot;period&quot;: &quot;季度跟踪&quot;,
+          &quot;evidence&quot;: &quot;重点观察高速 CCL 产品结构、覆铜板 ASP、原材料成本和新增产能。&quot;,
+          &quot;read&quot;: &quot;CCL 是 PCB 上游材料，等级升级能放大高速板材的价值量。&quot;,
+          &quot;source&quot;: &quot;https://www.sigc.com/&quot;
+        },
+        {
+          &quot;name&quot;: &quot;工业富联&quot;,
+          &quot;ticker&quot;: &quot;601138&quot;,
+          &quot;period&quot;: &quot;2026 前三季度&quot;,
+          &quot;evidence&quot;: &quot;收入 9,414.14 亿元，同比 +55.88%；净利润 403.75 亿元；经营现金流 32.16 亿元。&quot;,
+          &quot;read&quot;: &quot;系统收入兑现明显，但现金转化与毛利率留存仍需持续观察。&quot;,
+          &quot;source&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225639532.PDF&quot;
+        }
+      ],
+      &quot;caveat&quot;: &quot;不同公司收入确认、产品结构和汇率口径不同。光模块 ASP、PCB 层数占比、CCL 等级收入和单柜 BOM 并非统一公开连续序列，研究结论需要以公司披露为锚、以模型为辅助。&quot;,
+      &quot;sources&quot;: [
+        { &quot;label&quot;: &quot;中际旭创 2026 三季报&quot;, &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF&quot; },
+        { &quot;label&quot;: &quot;沪电股份 2026 三季报&quot;, &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-28/1225627804.PDF&quot; },
+        { &quot;label&quot;: &quot;工业富联 2026 三季报&quot;, &quot;url&quot;: &quot;https://static.cninfo.com.cn/finalpage/2026-10-30/1225639532.PDF&quot; }
+      ]
+    }
+  ],
   &quot;chain&quot;: [
     {
       &quot;step&quot;: &quot;01&quot;,
@@ -4775,6 +5621,198 @@ const ECR_DATA = {
         tabs[next].focus();
       });
     });
+  }
+
+  function setupResearchTabs() {
+    const tabs = $$(&quot;.ecr-research-tab&quot;);
+    const panel = $(&quot;#ecr-research-panel&quot;);
+    if (!tabs.length || !panel) return;
+
+    const activate = (tab, shouldFocus = false) =&gt; {
+      tabs.forEach(item =&gt; {
+        const selected = item === tab;
+        item.classList.toggle(&quot;active&quot;, selected);
+        item.setAttribute(&quot;aria-selected&quot;, String(selected));
+        item.tabIndex = selected ? 0 : -1;
+      });
+      panel.setAttribute(&quot;aria-labelledby&quot;, tab.id);
+      renderResearchChains(tab.id.replace(&quot;ecr-research-tab-&quot;, &quot;&quot;));
+      if (shouldFocus) tab.focus();
+    };
+
+    tabs.forEach((tab, index) =&gt; {
+      tab.addEventListener(&quot;click&quot;, () =&gt; activate(tab));
+      tab.addEventListener(&quot;keydown&quot;, event =&gt; {
+        if (![&quot;ArrowLeft&quot;, &quot;ArrowRight&quot;, &quot;Home&quot;, &quot;End&quot;].includes(event.key)) return;
+        event.preventDefault();
+        let next = index;
+        if (event.key === &quot;ArrowLeft&quot;) next = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === &quot;ArrowRight&quot;) next = (index + 1) % tabs.length;
+        if (event.key === &quot;Home&quot;) next = 0;
+        if (event.key === &quot;End&quot;) next = tabs.length - 1;
+        activate(tabs[next], true);
+      });
+    });
+
+    const selected = tabs.find(tab =&gt; tab.getAttribute(&quot;aria-selected&quot;) === &quot;true&quot;) || tabs[0];
+    activate(selected);
+  }
+
+  function externalLink(label, url, className = &quot;&quot;) {
+    const link = textEl(&quot;a&quot;, className, label);
+    link.href = url;
+    link.target = &quot;_blank&quot;;
+    link.rel = &quot;noopener&quot;;
+    return link;
+  }
+
+  function renderResearchChains(chainId = &quot;memory&quot;) {
+    const chain = ECR_DATA.researchChains.find(item =&gt; item.id === chainId) || ECR_DATA.researchChains[0];
+    const panel = $(&quot;#ecr-research-panel&quot;);
+    if (!chain || !panel) return;
+
+    const overview = textEl(&quot;div&quot;, &quot;ecr-research-overview&quot;);
+    const thesis = textEl(&quot;div&quot;, &quot;ecr-research-thesis&quot;);
+    thesis.append(
+      textEl(&quot;div&quot;, &quot;ecr-research-kicker text-small&quot;, chain.kicker),
+      textEl(&quot;h3&quot;, &quot;ecr-research-title&quot;, chain.title),
+      textEl(&quot;p&quot;, &quot;ecr-research-summary&quot;, chain.summary)
+    );
+
+    const decision = textEl(&quot;div&quot;, &quot;ecr-research-decision&quot;);
+    const verdict = textEl(&quot;div&quot;, &quot;ecr-research-verdict&quot;);
+    verdict.append(
+      textEl(&quot;div&quot;, &quot;ecr-research-decision-label text-small&quot;, &quot;研究判断&quot;),
+      document.createTextNode(chain.verdict)
+    );
+    const next = textEl(&quot;div&quot;, &quot;ecr-research-next&quot;);
+    next.append(
+      textEl(&quot;span&quot;, &quot;text-small&quot;, &quot;下一次需要核验&quot;),
+      textEl(&quot;span&quot;, &quot;&quot;, chain.nextCheck)
+    );
+    decision.append(verdict, next);
+    overview.append(thesis, decision);
+
+    const statusRow = textEl(&quot;div&quot;, &quot;ecr-research-status-row&quot;);
+    statusRow.setAttribute(&quot;aria-label&quot;, &quot;四盏产业状态灯&quot;);
+    chain.statuses.forEach(status =&gt; {
+      const item = textEl(&quot;div&quot;, &quot;ecr-research-status&quot;);
+      const dot = textEl(&quot;span&quot;, `ecr-dot is-${status.tone}`);
+      dot.setAttribute(&quot;aria-hidden&quot;, &quot;true&quot;);
+      const copy = textEl(&quot;div&quot;, &quot;ecr-research-status-copy&quot;);
+      copy.append(
+        textEl(&quot;span&quot;, &quot;ecr-status-label text-small&quot;, status.label),
+        textEl(&quot;strong&quot;, &quot;&quot;, status.value)
+      );
+      item.append(dot, copy);
+      statusRow.append(item);
+    });
+
+    const chainHead = textEl(&quot;div&quot;, &quot;ecr-research-subhead&quot;);
+    const chainHeadCopy = textEl(&quot;div&quot;);
+    chainHeadCopy.append(
+      textEl(&quot;strong&quot;, &quot;&quot;, &quot;五步价值传导&quot;),
+      textEl(&quot;span&quot;, &quot;text-small&quot;, &quot;从需求变化一路追到报表兑现&quot;)
+    );
+    chainHead.append(chainHeadCopy);
+
+    const stepRow = textEl(&quot;div&quot;, &quot;ecr-research-chain&quot;);
+    chain.steps.forEach((step, index) =&gt; {
+      const item = textEl(&quot;div&quot;, &quot;ecr-research-step&quot;);
+      item.append(
+        textEl(&quot;span&quot;, &quot;ecr-research-step-index text-small&quot;, String(index + 1).padStart(2, &quot;0&quot;)),
+        textEl(&quot;strong&quot;, &quot;&quot;, step.label),
+        textEl(&quot;span&quot;, &quot;ecr-research-step-copy text-small&quot;, step.copy)
+      );
+      stepRow.append(item);
+    });
+
+    const dataHead = textEl(&quot;div&quot;, &quot;ecr-research-subhead&quot;);
+    const dataHeadCopy = textEl(&quot;div&quot;);
+    dataHeadCopy.append(
+      textEl(&quot;strong&quot;, &quot;&quot;, &quot;必看数据与验证顺序&quot;),
+      textEl(&quot;span&quot;, &quot;text-small&quot;, &quot;先判断方向，再核验频率、属性和原始来源&quot;)
+    );
+    dataHead.append(dataHeadCopy);
+
+    const tableWrap = textEl(&quot;div&quot;, &quot;ecr-research-table-wrap&quot;);
+    const table = textEl(&quot;table&quot;, &quot;ecr-research-table&quot;);
+    const caption = textEl(&quot;caption&quot;, &quot;sr-only&quot;, `${chain.name}必看数据`);
+    const thead = textEl(&quot;thead&quot;);
+    const headerRow = textEl(&quot;tr&quot;);
+    [&quot;必看数据&quot;, &quot;如何解读&quot;, &quot;看它判断什么&quot;, &quot;读数方向&quot;, &quot;更新频率&quot;, &quot;数据属性&quot;].forEach(label =&gt; {
+      const th = textEl(&quot;th&quot;, &quot;&quot;, label);
+      th.scope = &quot;col&quot;;
+      headerRow.append(th);
+    });
+    thead.append(headerRow);
+    const tbody = textEl(&quot;tbody&quot;);
+    chain.metrics.forEach(metric =&gt; {
+      const row = textEl(&quot;tr&quot;);
+      const metricCell = textEl(&quot;td&quot;);
+      const metricName = textEl(&quot;div&quot;, &quot;ecr-research-metric-name&quot;);
+      metricName.append(
+        textEl(&quot;span&quot;, &quot;&quot;, metric.metric),
+        externalLink(metric.source, metric.url, &quot;ecr-research-source text-small&quot;)
+      );
+      metricCell.append(metricName);
+      const readingCell = textEl(&quot;td&quot;, &quot;&quot;, metric.reading);
+      const signalCell = textEl(&quot;td&quot;, &quot;&quot;, metric.signal);
+      const directionCell = textEl(&quot;td&quot;);
+      const reading = textEl(&quot;span&quot;, `ecr-reading is-${metric.tone}`);
+      const readingLabels = { up: &quot;上行 / 改善&quot;, tight: &quot;偏紧 / 有瓶颈&quot;, neutral: &quot;跟踪 / 待确认&quot;, down: &quot;回落 / 放缓&quot; };
+      reading.textContent = readingLabels[metric.tone] || &quot;跟踪 / 待确认&quot;;
+      directionCell.append(reading);
+      const frequencyCell = textEl(&quot;td&quot;, &quot;&quot;, metric.frequency);
+      const typeCell = textEl(&quot;td&quot;);
+      typeCell.append(textEl(&quot;span&quot;, &quot;ecr-data-type text-small&quot;, metric.type));
+      row.append(metricCell, readingCell, signalCell, directionCell, frequencyCell, typeCell);
+      tbody.append(row);
+    });
+    table.append(caption, thead, tbody);
+    tableWrap.append(table);
+
+    const bottomHead = textEl(&quot;div&quot;, &quot;ecr-research-subhead&quot;);
+    const bottomHeadCopy = textEl(&quot;div&quot;);
+    bottomHeadCopy.append(
+      textEl(&quot;strong&quot;, &quot;&quot;, &quot;公司财报验证&quot;),
+      textEl(&quot;span&quot;, &quot;text-small&quot;, &quot;收入与利润之后，继续检查营运资金和现金转化&quot;)
+    );
+    bottomHead.append(bottomHeadCopy);
+
+    const bottom = textEl(&quot;div&quot;, &quot;ecr-research-bottom&quot;);
+    const companies = textEl(&quot;div&quot;, &quot;ecr-research-companies&quot;);
+    chain.companies.forEach(company =&gt; {
+      const item = textEl(&quot;div&quot;, &quot;ecr-research-company&quot;);
+      const id = textEl(&quot;div&quot;, &quot;ecr-research-company-id&quot;);
+      id.append(
+        textEl(&quot;strong&quot;, &quot;&quot;, company.name),
+        textEl(&quot;span&quot;, &quot;text-small&quot;, `${company.ticker} · ${company.period}`)
+      );
+      const body = textEl(&quot;div&quot;);
+      body.append(
+        textEl(&quot;p&quot;, &quot;&quot;, company.evidence),
+        textEl(&quot;p&quot;, &quot;ecr-research-company-read text-small&quot;, company.read),
+        externalLink(&quot;打开原始披露&quot;, company.source, &quot;ecr-research-company-link text-small&quot;)
+      );
+      item.append(id, body);
+      companies.append(item);
+    });
+
+    const evidence = textEl(&quot;div&quot;, &quot;ecr-research-evidence&quot;);
+    evidence.append(
+      textEl(&quot;strong&quot;, &quot;&quot;, &quot;来源与口径限制&quot;),
+      textEl(&quot;p&quot;, &quot;&quot;, chain.caveat)
+    );
+    const links = textEl(&quot;div&quot;, &quot;ecr-research-links&quot;);
+    links.append(textEl(&quot;span&quot;, &quot;text-small&quot;, &quot;复核入口&quot;));
+    chain.sources.forEach(source =&gt; {
+      links.append(externalLink(source.label, source.url, &quot;text-small&quot;));
+    });
+    evidence.append(links);
+    bottom.append(companies, evidence);
+
+    panel.replaceChildren(overview, statusRow, chainHead, stepRow, dataHead, tableWrap, bottomHead, bottom);
   }
 
   function bindRanges(panelId, key, redraw) {
@@ -5310,6 +6348,7 @@ const ECR_DATA = {
   });
 
   setupTabs();
+  setupResearchTabs();
   renderObservations();
   renderCompanies();
   renderChain();
