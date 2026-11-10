@@ -1511,6 +1511,12 @@ svg.lucide {
 }
 
 html>body{padding:0}</style>
+<style>
+  html > body {
+    padding-inline: clamp(14px, 2vw, 24px) !important;
+    overflow-x: clip;
+  }
+</style>
 </head>
 <body>
 <script type="application/json" id="codex-visualization-widget-state">{}</script>
@@ -1810,7 +1816,9 @@ html>body{padding:0}</style>
       display: flex;
       flex-direction: column;
       gap: 18px;
-      width: 100%;
+      width: min(100%, 1280px);
+      margin-inline: auto;
+      padding-block: 32px 48px;
       min-width: 0;
     }
 
@@ -2747,6 +2755,7 @@ html>body{padding:0}</style>
 
     @media (max-width: 520px) {
       #ecr-review-20261109 {
+        padding-block: 20px 32px;
         gap: 14px;
       }
 
