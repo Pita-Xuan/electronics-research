@@ -1,0 +1,17 @@
+{
+  "metric_id": "trendforce.dram_spot.ddr5_16gb",
+  "unit": "美元/颗",
+  "source": "TrendForce",
+  "source_url": "https://www.trendforce.com/price/dram/dram_spot",
+  "points": [
+    {
+      "date": "2026-11-09",
+      "value": 60.167
+    },
+    {
+      "date": "2026-11-10",
+      "value": 60.167
+    }
+  ],
+  "updated_at": "2026-11-10T15:46:10Z"
+}

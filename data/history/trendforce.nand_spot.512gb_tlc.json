@@ -1,0 +1,13 @@
+{
+  "metric_id": "trendforce.nand_spot.512gb_tlc",
+  "unit": "美元/颗",
+  "source": "TrendForce",
+  "source_url": "https://www.trendforce.com/price/flash/flash_spot",
+  "points": [
+    {
+      "date": "2026-11-02",
+      "value": 16.152
+    }
+  ],
+  "updated_at": "2026-11-10T15:46:10Z"
+}
