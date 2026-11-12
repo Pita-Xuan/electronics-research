@@ -1,5 +1,5 @@
 {
-  "crawled_at": "2026-11-11T02:20:18Z",
+  "crawled_at": "2026-11-12T02:26:24Z",
   "timezone": "Asia/Shanghai",
   "schedule": "工作日北京时间 09:30",
   "metrics": {
@@ -14,11 +14,11 @@
       "collector": "trendforce",
       "selector_label": "DDR5 16Gb (2Gx8) 4800/5600",
       "max_age_days": 3,
-      "date": "2026-11-10",
-      "value": 60.167,
+      "date": "2026-11-11",
+      "value": 60.233,
       "status": "ok",
-      "source_updated_at": "2026-11-10T18:10:00+08:00",
-      "last_success_at": "2026-11-11T02:20:18Z"
+      "source_updated_at": "2026-11-11T18:10:00+08:00",
+      "last_success_at": "2026-11-12T02:26:24Z"
     },
     "trendforce.dram_spot.ddr4_16gb": {
       "id": "trendforce.dram_spot.ddr4_16gb",
@@ -31,11 +31,11 @@
       "collector": "trendforce",
       "selector_label": "DDR4 16Gb (2Gx8) 3200",
       "max_age_days": 3,
-      "date": "2026-11-10",
-      "value": 79.99,
+      "date": "2026-11-11",
+      "value": 79.867,
       "status": "ok",
-      "source_updated_at": "2026-11-10T18:10:00+08:00",
-      "last_success_at": "2026-11-11T02:20:18Z"
+      "source_updated_at": "2026-11-11T18:10:00+08:00",
+      "last_success_at": "2026-11-12T02:26:24Z"
     },
     "trendforce.nand_spot.512gb_tlc": {
       "id": "trendforce.nand_spot.512gb_tlc",
@@ -52,7 +52,7 @@
       "value": 16.152,
       "status": "lagging",
       "source_updated_at": "2026-11-02T14:40:00+08:00",
-      "last_success_at": "2026-11-11T02:20:18Z"
+      "last_success_at": "2026-11-12T02:26:24Z"
     },
     "fred.PCOPPUSDM": {
       "id": "fred.PCOPPUSDM",
@@ -68,7 +68,7 @@
       "value": 14473.05590909091,
       "status": "ok",
       "source_updated_at": null,
-      "last_success_at": "2026-11-11T02:20:18Z"
+      "last_success_at": "2026-11-12T02:26:24Z"
     },
     "fred.PALUMUSDM": {
       "id": "fred.PALUMUSDM",
@@ -84,7 +84,7 @@
       "value": 3283.054285714286,
       "status": "ok",
       "source_updated_at": null,
-      "last_success_at": "2026-11-11T02:20:18Z"
+      "last_success_at": "2026-11-12T02:26:24Z"
     },
     "fred.PNICKUSDM": {
       "id": "fred.PNICKUSDM",
@@ -100,7 +100,7 @@
       "value": 16323.8219047619,
       "status": "ok",
       "source_updated_at": null,
-      "last_success_at": "2026-11-11T02:20:18Z"
+      "last_success_at": "2026-11-12T02:26:24Z"
     },
     "fred.PTINUSDM": {
       "id": "fred.PTINUSDM",
@@ -116,7 +116,7 @@
       "value": 53711.67666666667,
       "status": "ok",
       "source_updated_at": null,
-      "last_success_at": "2026-11-11T02:20:18Z"
+      "last_success_at": "2026-11-12T02:26:24Z"
     }
   }
 }
